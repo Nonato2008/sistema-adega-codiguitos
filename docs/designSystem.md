@@ -1,196 +1,124 @@
-# Design System - Sistema de Gerenciamneto de uma Adega
+# 🍷Design System — Sistema de Gerenciamento de Adega
 
-## Introdução
+## 📌 Introdução
+Este Design System tem como objetivo criar uma interface
+simples, intuitiva e eficiente para o usuário.
+Foco em clareza, organização e facilidade de uso.
 
-* O Design System em questão serve para ajudar o cliente a utilizar o sistema, sendo intuitivo e prático, com cores guias e design simplista.
+## 🎨 Fundamentos
 
+### Cores
+- Primary — #FFFFFF (Branco)
+- Secondary — #E5E5E5 (Cinza claro)
+- Third — #A41623 (Vinho)
 
-## Fundamentos
+### Uso:
+* Branco → base da interface
+* Cinza → separação e estrutura
+* Vinho → destaque e ações
 
-### 🎨Cores:
+### 🔤 Tipografia
 
-<div style="background-color:#FFFF; padding:10px; color:black; border-radius:10px;">
-  Primary Color - #FFFFFF
-</div>
+## Fonte principal: Inter, sans-serif
 
-<div style="margin:2px; background-color:#E5E5E5; padding:10px; color:black; border-radius:10px;">
-  Secondary Color - #E5E5E5
-</div>
+### Características:
+- Alta legibilidade
+- Visual moderno
+- Boa performance
+- Hierarquia:
+- H1 — 32px
+- H2 — 24px
+- Texto — 16px
+- Small — 14px
 
-<div style="margin:2px; background-color:#A41623; padding:10px; color:white; border-radius:10px;">
-  Third Color - #A41623
-</div>
+## 🧩 Componentes
 
-### Tipografia: 
+### 🔘 Botão
 
-* Fonte Principal: Inter, sans-serif
-    - Melhor legibilidade;
-    - Sensação de modernidade, rapidez e confiança;
-    - Performance e responsividade;
+* Exemplo:
 
-* Hierarquia:
-    - H1: 32px
-    - H2: 24px
-    - Texto: 16px
-    - Small: 14px
+    [ Salvar Produto ]
 
-### Componentes:
+* Uso:
+- Ações principais
+- Confirmações
+- Interações do usuário
 
-## 🔘Botão 
+## 📝 Card
 
-<button style="background-color: #A41623; color: #FFFFFF; border: none; padding: 12px 20px; border-radius: 8px;">
-  Salvar Produto
-</button>
-
-### USO
-Usados para adicionar, remover/desativar produtos;
+### Estrutura:
     
-## 📝Card 
+    Produto: Cerveja Brahma
 
-<div style="width: 250px; border: 1px solid #E5E5E5; border-radius: 10px; overflow: hidden; font-family: sans-serif; background: #FFFFFF;">
+    Quantidade: 12
+    Preço: R$ 89,90
+    [ - ] 12 [ + ]
 
-  <!-- Imagem -->
-  <div style="background: #E5E5E5; height: 140px; display: flex; align-items: center; justify-content: center; color: #999;">
-    Imagem
-  </div>
+* Uso:
 
-  <!-- Conteúdo -->
-  <div style="padding: 12px;">
+  Exibir produtos
+
+  Organização visual
+
+  Leitura rápida
+
+## 🕳️ Input
+
+* Estrutura:
     
-<h4 style="margin: 0 0 8px; color: #333;">
-      Cerveja Brahma
-    </h4>
+    Nome:
+    Quantidade:
+    Valor:
+    Fornecedor:
+    [ Salvar ]
 
- <!-- Quantidade -->
-<div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px;">
+### Uso:
+*    Entrada de dados
+*    Cadastro de produtos
 
-<span style="font-size: 14px; color: #666;">
-        Quantidade
-      </span>
 
-<div style="display: flex; align-items: center; gap: 6px;">
-        
-<button style="
-          width: 28px;
-          height: 28px;
-          border: 1px solid #E5E5E5;
-          background: #FFFFFF;
-          border-radius: 6px;
-          cursor: pointer;
-        ">
-          -
-        </button>
+## ✔️ Seletores (Menu)
 
-<span style="min-width: 20px; text-align: center;">12</span>
+### Estrutura:
 
-<button style="
-          width: 28px;
-          height: 28px;
-          border: none;
-          background: #A41623;
-          color: #FFFFFF;
-          border-radius: 6px;
-          cursor: pointer;
-        ">
-          +
-</button>
+    🏠 Início
+    📦 Produtos
+    📊 Relatórios
+    ⚙️ Configurações
 
-</div>
-</div>
+### Uso:
 
-<!-- Valor -->
-<p style="margin: 0; font-weight: bold; color: #A41623;">
-      R$ 89,90
-</p>
+    Navegação entre páginas
+    Organização do sistema
 
-  </div>
+## 🚢 Navegação
 
-</div>
+### Uso:
+*   Menus laterais
+*   Acesso rápido às funcionalidades
 
-### USO
-Expor os produtos de forma organizada;
+# 📐 Princípios
 
-## 🕳️Input  
+## 📱 Responsividade
 
-<div style="font-family: sans-serif; width: 220px;">
+* Interface adaptável
+* Funciona em diferentes dispositivos
+* Organização consistente
 
-  <input type="text" placeholder="Nome" style="width:100%; margin-bottom:6px; padding:6px;">
-  
-  <input type="number" placeholder="Quantidade" style="width:100%; margin-bottom:6px; padding:6px;">
-  
-  <input type="text" placeholder="Valor" style="width:100%; margin-bottom:6px; padding:6px;">
-  
-  <input type="text" placeholder="Fornecedor" style="width:100%; margin-bottom:8px; padding:6px;">
+## 🎯 Componentes Visuais
 
-  <button style="width:100%; padding:6px; background:#A41623; color:#fff; border:none;">
-    Salvar
-  </button>
+* Interface limpa
+* Destaques bem definidos
+* Ícones intuitivos
 
-</div>
 
-### USO
-Campos de textos para informar dados do produto;
+## ♿ Acessibilidade
+* Foco no usuário
+* Interface simples e direta
+* Facilidade de uso
 
-## ✔️Seletores
-
-<style>
-.menu {
-  width: 180px;
-  background: #FFFFFF; /* fundo principal */
-  padding: 10px;
-  border-right: 2px solid #E5E5E5;
-}
-
-.menu a {
-  display: block;
-  color: #333;
-  padding: 10px;
-  text-decoration: none;
-  border-radius: 5px;
-  margin-bottom: 5px;
-}
-
-.menu a:hover {
-  background: #E5E5E5; /* leve destaque */
-}
-
-.menu a.ativo {
-  background: #A41623; /* destaque principal */
-  color: #FFFFFF;
-}
-</style>
-
-<div class="menu">
-  <a href="#" class="ativo">🏠 Início</a>
-  <a href="#">📦 Produtos</a>
-  <a href="#">📊 Relatórios</a>
-  <a href="#">⚙️ Configurações</a>
-</div>
-
-### USO
-Para menus;
-
-## 🚢Navegação 
-
-### USO
-Menus laterais para navegar em diferentes campos;
-
-## Princípios
-
-### Responsividade:
-    - Elementos funcionais;
-    - Responsivos;
-    - Para qualquer resolução e aparelho;
-
-    * Para os componentes se comportarem de forma organizada
-
-### Componentes visuais:
-    - Imagens intuitivas;
-    - Botões chamativos que expressem sua funcionalidade;
-
-    * A paleta combina branco, cinza e vinho para garantir uma interface limpa, organizada e com destaque elegante alinhado ao tema de adega. Junto das imagens e botões que ajudarão o cliente em seu uso 
-
-### Acessebilidade;
-    - Foco no Usuário;
-    - Tomar decisões baseadas nas prefereências do cliente;
-
+## Resumo
+*    Interface limpa baseada em branco
+*    Cinza para estrutura
+*    Vermelho vinho para destaque
+*    Componentes simples e funcionais
