@@ -9,7 +9,9 @@ Representa os produtos em estoque.
 
 ### 📄 Atributos
 - id (PK)
+- idForn (idFornecedor)
 - nome
+- descricao
 - preco
 - qtd(quantidade)
 - status
@@ -17,15 +19,14 @@ Representa os produtos em estoque.
 - dataVenci
 - dataCad
 
-## ## 🪢 Relacionamento: Fornecedores
+## 🪢 Relacionamento: Fornecedores
 
 ### 📌 Descrição
-Um fornecedor tem varios produtos.
+Um fornecedor pode ter varios produtos.
 
 ### 📄 Atributos
 - id (PK)
 - nome
-- idProduto (FK)
 - fornecedorImagem
 - dataCad
 
@@ -36,7 +37,6 @@ Representa uma transação de compra realizada e a saida de um produto.
 
 ### 📄 Atributos
 - id (PK)
-- idProduto (FK)
 - valor_total
 - dataCad
 
@@ -50,6 +50,17 @@ Uma venda pode conter vários itens.
 - idProduto(FK)
 - idVenda (FK)
 - qtd (quantidade)
-- valor
+- valorItem
 
+## 📦 Entidade: Propreitarios
+
+### 📌 Descrição
+Reprsenta os proprietarios que podem acessar o sistema .
+
+### 📄 Atributos
+- id (PK)
+- nome
+- email
+- senha
+- dataCad
 
