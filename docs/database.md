@@ -24,7 +24,7 @@ Representa os produtos em estoque.
 ### 📌 Descrição
 Um fornecedor pode ter varios produtos.
 
-### 📄 Atributos
+### 📄 Atributos (Fornecedores)
 - id (PK)
 - nome
 - fornecedorImagem
@@ -35,7 +35,7 @@ Um fornecedor pode ter varios produtos.
 ### 📌 Descrição
 Uma venda pertence a um proprietario e a um vendedor e um proprietario possue varias vendes ou uma
 
-### 📄 Atributos
+### 📄 Atributos (Venda)
 - id (PK)
 - idProprietario (FK)
 - idVendedor (FK)
