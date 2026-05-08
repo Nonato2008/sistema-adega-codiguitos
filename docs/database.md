@@ -71,7 +71,7 @@ Reprsenta os proprietarios que podem acessar o sistema .
 ### 📌 Descrição
 Um vendedor possue um proprietario e um proprietario possue um ou varios vendedores
 
-### 🧾 Estrutura (Itens_Venda)
+### 🧾 Estrutura (Vendedores)
 - id (PK)
 - idProprietario(FK)
 - nome
