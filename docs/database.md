@@ -19,7 +19,7 @@ Representa os produtos em estoque.
 - dataVenci
 - dataCad
 
-## 🪢 Relacionamento: Fornecedores
+## 🪢 Relacionamento: Fornecedores x Produtos
 
 ### 📌 Descrição
 Um fornecedor pode ter varios produtos.
@@ -30,13 +30,15 @@ Um fornecedor pode ter varios produtos.
 - fornecedorImagem
 - dataCad
 
-## 🧾 Entidade: Venda
+## 🧾 🪢 Relacionamento: Venda x Proprietaros
 
 ### 📌 Descrição
-Representa uma transação de compra realizada e a saida de um produto.
+Uma venda pertence a um proprietario e a um vendedor e um proprietario possue varias vendes ou uma
 
 ### 📄 Atributos
 - id (PK)
+- idProprietario (FK)
+- idVendedor (FK)
 - valor_total
 - dataCad
 
@@ -63,4 +65,15 @@ Reprsenta os proprietarios que podem acessar o sistema .
 - email
 - senha
 - dataCad
+
+## 🪢 Relacionamento: Proprietarios x Vendedores
+
+### 📌 Descrição
+Um vendedor possue um proprietario e um proprietario possue um ou varios vendedores
+
+### 🧾 Estrutura (Itens_Venda)
+- id (PK)
+- idProprietario(FK)
+- nome
+- dataFunc
 
